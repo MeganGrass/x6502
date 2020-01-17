@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Windows">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Windows\Icon">
+      <UniqueIdentifier>{47650959-73bc-47b6-a485-f949cdda954a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Windows\Resource">
+      <UniqueIdentifier>{899559dd-2ae8-4e2b-ae44-39cb8d68b67a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="System">
+      <UniqueIdentifier>{981ab025-d449-483d-8223-a6969752be3f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="6502">
+      <UniqueIdentifier>{11ae4be5-167e-42c7-9659-d2a34c129f60}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="framework.h">
+      <Filter>Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="main.h" />
+    <ClInclude Include="Resource.h">
+      <Filter>Windows\Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\System\system.h">
+      <Filter>System</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\6502\6502.h">
+      <Filter>6502</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\6502\opcode.h">
+      <Filter>6502</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="small.ico">
+      <Filter>Windows\Icon</Filter>
+    </Image>
+    <Image Include="x6502.ico">
+      <Filter>Windows\Icon</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="..\..\System\configuration.cpp">
+      <Filter>System</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\System\file.cpp">
+      <Filter>System</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\System\string.cpp">
+      <Filter>System</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\System\type.cpp">
+      <Filter>System</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\6502\6502.cpp">
+      <Filter>6502</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="x6502.rc">
+      <Filter>Windows\Resource</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,44 @@
+These commands are necessary for x6502 to work properly.
+
+ORG <Value>	Program Counter
+		--- Directive used for assemblers
+		--- Value must be hexdecimal with 0x prefix
+
+START <Value>	NES File Offset
+		--- Disassembly will begin at this offset
+		--- Value must be hexdecimal with 0x prefix
+
+FINISH <Value>	NES File Offset
+		--- Disassembly will halt once this offset is reached
+		--- Value must be hexdecimal with 0x prefix
+
+ROM <String>	NES File Name
+		--- Name of NES ROM file on your PC
+		--- Put this string in quotation marks
+		--- If input is in the same folder directory as x6502, prefix with .\
+
+OUT <String>	Assembly File Name
+		--- Name of output text file on your PC
+		--- Put this string in quotation marks
+		--- This command shouldn't be combined with the APPEND command
+		--- If output is in the same folder directory as x6502, prefix with .\
+
+APPEND <String>	Assembly File Name
+		--- Append disassembly text to end of an existing file
+		--- Useful for combining text and data disassembly into single file
+		--- Put this string in quotation marks
+		--- This command shouldn't be combined with the OUT command
+		--- If output is in the same folder directory as x6502, prefix with .\
+
+------------------------
+
+These commands are not necessary.
+
+LABEL		Labels will be implemented for every JMP, branch type and sub-routine
+
+COMMENT		Two semi-colons will be placed on each line for future commenting
+
+DATA		Output data will be #byte data
+
+ADDRESS		Commented file address and counter will be added to each line
+
